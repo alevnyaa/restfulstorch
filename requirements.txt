@@ -1,0 +1,6 @@
+Babel
+Django
+django-phonenumber-field
+djangorestframework
+phonenumberslite
+pytz
