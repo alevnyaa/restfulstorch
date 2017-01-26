@@ -28,7 +28,7 @@ class Place(models.Model):
     email_address = models.EmailField(blank=True)
     website_address = models.CharField(max_length=128, blank=True)
 
-    contact_name = models.CharField(max_length==30)
+    contact_name = models.CharField(max_length=30)
     contact_phone_number = models.CharField(max_length=11)
     contact_email_address = models.EmailField(blank=True)
 

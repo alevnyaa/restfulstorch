@@ -93,3 +93,4 @@ secrets.py
 
 # Swap files
 *.swp
+dj/db.sqlite3
