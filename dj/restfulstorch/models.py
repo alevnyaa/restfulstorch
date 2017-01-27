@@ -15,6 +15,8 @@ class Category(models.Model):
         return self.name_tr + "/" + self.name_en
 
 class Place(models.Model):
+    creation_time = models.DateField()
+
     store_code = models.BigIntegerField(unique=True)
     store_name = models.CharField(max_length=48)
 
