@@ -2,6 +2,11 @@ from django.contrib import admin
 
 from .models import Category, Place
 
-# Register your models here.
-admin.site.register(Category)
-admin.site.register(Place)
+class CategoryAdmin(admin.ModelAdmin):
+    pass
+
+class PlaceAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Category, CategoryAdmin)
+admin.site.register(Place, PlaceAdmin)

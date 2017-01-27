@@ -8,6 +8,8 @@ class Category(models.Model):
 
     parent_cat = models.ForeignKey('Category', null=True, blank=True)
 
+    sellers = models.ManyToManyField('Place', blank=True)
+
     class Meta:
         verbose_name_plural = "categories"
 
