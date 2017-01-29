@@ -17,6 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^rest/', include('restfulstorch.urls')),
+    url(r'^', include('restfulstorch.urls')),
     url(r'^admin/', admin.site.urls),
 ]

@@ -1,12 +1,12 @@
 from django.contrib import admin
 
-from .models import Category, Place
+from .models import Category, Company
 
 class CategoryAdmin(admin.ModelAdmin):
     pass
 
-class PlaceAdmin(admin.ModelAdmin):
+class CompanyAdmin(admin.ModelAdmin):
     pass
 
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(Place, PlaceAdmin)
+admin.site.register(Company, CompanyAdmin)

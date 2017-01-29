@@ -1,6 +1,6 @@
-from .models import Category, Place
+from .models import Category, Company
 from rest_framework import viewsets
-from .serializers import CategorySerializer, PlaceSerializer, PlaceDetailSerializer
+from .serializers import CategorySerializer, CompanySerializer, CompanyDetailSerializer
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
@@ -11,18 +11,18 @@ class CategoryViewSet(viewsets.ModelViewSet):
     serializer_class = CategorySerializer
 
 
-class PlaceViewSet(viewsets.ModelViewSet):
+class CompanyViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows groups to be viewed or edited.
     """
-    queryset = Place.objects.all()
-    serializer_class = PlaceSerializer
+    queryset = Company.objects.all()
+    serializer_class = CompanySerializer
 
-class PlaceDetailViewSet(viewsets.ModelViewSet):
+class CompanyDetailViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows groups to be viewed or edited.
     """
-    queryset = Place.objects.all()
-    serializer_class = PlaceDetailSerializer
+    queryset = Company.objects.all()
+    serializer_class = CompanyDetailSerializer
 
 
