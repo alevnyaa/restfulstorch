@@ -1,7 +1,7 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Turkish translation for the restfulstorch Django app.
+# Copyright (C) 2017 Alev Nyaa
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Alev Nyaa <alevnyaa@gmail.com>, 2017.
 #
 #, fuzzy
 msgid ""
@@ -20,109 +20,109 @@ msgstr ""
 
 #: restfulstorch/models.py:12
 msgid "parent category"
-msgstr ""
+msgstr "ana kategorisi"
 
 #: restfulstorch/models.py:18 restfulstorch/models.py:70
 #: restfulstorch/models.py:85
 msgid "store"
-msgstr ""
+msgstr "mağaza"
 
 #: restfulstorch/models.py:22
 msgid "category"
-msgstr ""
+msgstr "kategori"
 
 #: restfulstorch/models.py:23
 msgid "categories"
-msgstr ""
+msgstr "kategoriler"
 
 #: restfulstorch/models.py:30
 msgid "creation time"
-msgstr ""
+msgstr "yaratılma tarihi"
 
 #: restfulstorch/models.py:35
 msgid "store code"
-msgstr ""
+msgstr "mağaza kodu"
 
 #: restfulstorch/models.py:40
 msgid "store name"
-msgstr ""
+msgstr "mağaza ismi"
 
 #: restfulstorch/models.py:45
 msgid "latitude"
-msgstr ""
+msgstr "enlem"
 
 #: restfulstorch/models.py:51
 msgid "longitude"
-msgstr ""
+msgstr "boylam"
 
 #: restfulstorch/models.py:56
 msgid "address"
-msgstr ""
+msgstr "adres"
 
 #: restfulstorch/models.py:58
 msgid "primary phone number"
-msgstr ""
+msgstr "birincil telefon numarası"
 
 #: restfulstorch/models.py:59
 msgid "secondary phone number"
-msgstr ""
+msgstr "ikincil telefon numarası"
 
 #: restfulstorch/models.py:60
 msgid "email address"
-msgstr ""
+msgstr "email adresi"
 
 #: restfulstorch/models.py:61
 msgid "website address"
-msgstr ""
+msgstr "website adresi"
 
 #: restfulstorch/models.py:62
 msgid "contact name"
-msgstr ""
+msgstr "iletişim ismi"
 
 #: restfulstorch/models.py:63
 msgid "contact phone number"
-msgstr ""
+msgstr "iletişim telefon numarası"
 
 #: restfulstorch/models.py:64
 msgid "contact email address"
-msgstr ""
+msgstr "iletişim email adresi"
 
 #: restfulstorch/models.py:73
 msgid "Monday"
-msgstr ""
+msgstr "Pazartesi"
 
 #: restfulstorch/models.py:74
 msgid "Tuesday"
-msgstr ""
+msgstr "Salı"
 
 #: restfulstorch/models.py:75
 msgid "Wednesday"
-msgstr ""
+msgstr "Çarşamba"
 
 #: restfulstorch/models.py:76
 msgid "Thursday"
-msgstr ""
+msgstr "Perşembe"
 
 #: restfulstorch/models.py:77
 msgid "Friday"
-msgstr ""
+msgstr "Cuma"
 
 #: restfulstorch/models.py:78
 msgid "Saturday"
-msgstr ""
+msgstr "Cumartesi"
 
 #: restfulstorch/models.py:79
 msgid "Sunday"
-msgstr ""
+msgstr "Pazar"
 
 #: restfulstorch/models.py:88
 msgid "weekday"
-msgstr ""
+msgstr "gün"
 
 #: restfulstorch/models.py:92
 msgid "opening time"
-msgstr ""
+msgstr "açılış saati"
 
 #: restfulstorch/models.py:93
 msgid "closing time"
-msgstr ""
+msgstr "kapanış saati"
