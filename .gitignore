@@ -94,3 +94,9 @@ secrets.py
 # Swap files
 *.swp
 dj/db.sqlite3
+
+# Temporary files
+*~
+
+# Idea IDE
+.idea/

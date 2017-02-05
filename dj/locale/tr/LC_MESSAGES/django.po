@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-05 04:20+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: restfulstorch/models.py:12
+msgid "parent category"
+msgstr ""
+
+#: restfulstorch/models.py:18 restfulstorch/models.py:70
+#: restfulstorch/models.py:85
+msgid "store"
+msgstr ""
+
+#: restfulstorch/models.py:22
+msgid "category"
+msgstr ""
+
+#: restfulstorch/models.py:23
+msgid "categories"
+msgstr ""
+
+#: restfulstorch/models.py:30
+msgid "creation time"
+msgstr ""
+
+#: restfulstorch/models.py:35
+msgid "store code"
+msgstr ""
+
+#: restfulstorch/models.py:40
+msgid "store name"
+msgstr ""
+
+#: restfulstorch/models.py:45
+msgid "latitude"
+msgstr ""
+
+#: restfulstorch/models.py:51
+msgid "longitude"
+msgstr ""
+
+#: restfulstorch/models.py:56
+msgid "address"
+msgstr ""
+
+#: restfulstorch/models.py:58
+msgid "primary phone number"
+msgstr ""
+
+#: restfulstorch/models.py:59
+msgid "secondary phone number"
+msgstr ""
+
+#: restfulstorch/models.py:60
+msgid "email address"
+msgstr ""
+
+#: restfulstorch/models.py:61
+msgid "website address"
+msgstr ""
+
+#: restfulstorch/models.py:62
+msgid "contact name"
+msgstr ""
+
+#: restfulstorch/models.py:63
+msgid "contact phone number"
+msgstr ""
+
+#: restfulstorch/models.py:64
+msgid "contact email address"
+msgstr ""
+
+#: restfulstorch/models.py:73
+msgid "Monday"
+msgstr ""
+
+#: restfulstorch/models.py:74
+msgid "Tuesday"
+msgstr ""
+
+#: restfulstorch/models.py:75
+msgid "Wednesday"
+msgstr ""
+
+#: restfulstorch/models.py:76
+msgid "Thursday"
+msgstr ""
+
+#: restfulstorch/models.py:77
+msgid "Friday"
+msgstr ""
+
+#: restfulstorch/models.py:78
+msgid "Saturday"
+msgstr ""
+
+#: restfulstorch/models.py:79
+msgid "Sunday"
+msgstr ""
+
+#: restfulstorch/models.py:88
+msgid "weekday"
+msgstr ""
+
+#: restfulstorch/models.py:92
+msgid "opening time"
+msgstr ""
+
+#: restfulstorch/models.py:93
+msgid "closing time"
+msgstr ""

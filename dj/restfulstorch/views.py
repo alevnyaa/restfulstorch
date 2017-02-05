@@ -1,6 +1,6 @@
-from .models import Category, Company
+from .models import Category, Store
 from rest_framework import viewsets
-from .serializers import CategorySerializer, CompanySerializer, CompanyDetailSerializer
+from .serializers import CategorySerializer, StoreSerializer
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
@@ -11,18 +11,9 @@ class CategoryViewSet(viewsets.ModelViewSet):
     serializer_class = CategorySerializer
 
 
-class CompanyViewSet(viewsets.ModelViewSet):
+class StoreViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows groups to be viewed or edited.
     """
-    queryset = Company.objects.all()
-    serializer_class = CompanySerializer
-
-class CompanyDetailViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows groups to be viewed or edited.
-    """
-    queryset = Company.objects.all()
-    serializer_class = CompanyDetailSerializer
-
-
+    queryset = Store.objects.all()
+    serializer_class = StoreSerializer

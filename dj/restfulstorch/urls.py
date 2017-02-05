@@ -6,8 +6,7 @@ app_name = 'restfulstorch'
 
 router = routers.DefaultRouter()
 router.register(r'categories', views.CategoryViewSet, 'categories')
-router.register(r'companies', views.CompanyViewSet, 'companies')
-router.register(r'company-detail', views.CompanyDetailViewSet, 'company-detail')
+router.register(r'stores', views.StoreViewSet, 'stores')
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
