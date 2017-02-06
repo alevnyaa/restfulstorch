@@ -117,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-LOCALE_PATHS = ('restfulstorch/locale')
+LOCALE_PATHS = ('restfulstorch/locale',)
 
 TIME_ZONE = 'Europe/Istanbul'
 
