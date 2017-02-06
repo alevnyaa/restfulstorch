@@ -1,6 +1,6 @@
-from .models import Category, Store
+from .models import Category, Store, StoreDetails, BusinessHours
 from rest_framework import viewsets
-from .serializers import CategorySerializer, StoreSerializer
+from .serializers import CategorySerializer, StoreSerializer, StoreDetailsSerializer, BusinessHoursSerializer
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
@@ -17,3 +17,18 @@ class StoreViewSet(viewsets.ModelViewSet):
     """
     queryset = Store.objects.all()
     serializer_class = StoreSerializer
+
+class StoreDetailsViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = StoreDetails.objects.all()
+    serializer_class = StoreDetailsSerializer
+
+
+class BusinessHoursViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = BusinessHours.objects.all()
+    serializer_class = BusinessHoursSerializer
