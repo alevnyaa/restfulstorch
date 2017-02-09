@@ -1,6 +1,5 @@
 Babel
 Django
-django-phonenumber-field
+django-treebeard
 djangorestframework
-phonenumberslite
 pytz

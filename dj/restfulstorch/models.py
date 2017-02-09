@@ -5,14 +5,14 @@ class Category(models.Model):
     name_tr = models.CharField(_('name [tr]'), max_length=48)
     name_en = models.CharField(_('name [en]'), max_length=48)
 
-    parent_cat = models.ForeignKey(
+    children = models.ManyToManyField(
             'Category',
             null=True,
             blank=True,
-            verbose_name=_('parent category')
+            verbose_name=_('subcategory')
     )
 
-    companies = models.ManyToManyField(
+    stores = models.ManyToManyField(
             'Store',
             blank=True,
             verbose_name=_('store')
@@ -47,7 +47,7 @@ class Store(models.Model):
             max_digits=8,
             decimal_places=6
     )
-    
+
     creation_time = models.DateField(
             _('creation time'),
             auto_now_add=True

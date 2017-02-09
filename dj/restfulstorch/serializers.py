@@ -6,11 +6,19 @@ class StoreSerializer(serializers.HyperlinkedModelSerializer):
         model = Store
         fields = '__all__'
 
-class CategorySerializer(serializers.HyperlinkedModelSerializer):
+class CategorySerializer(serializers.ModelSerializer):
+    parent = serializers.SerializerMethodField()
     stores = StoreSerializer(many=True)
+
+    def get_parent(self, obj):
+        if obj.parent is not None:
+            return CategorySerializer(obj.parent).data
+        else:
+            return None
+
     class Meta:
         model = Category
-        fields = '__all__'
+        fields = ('name_tr', 'name_en', 'id', 'parent', 'stores')
 
 class StoreDetailsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
