@@ -5,12 +5,18 @@ class Category(models.Model):
     name_tr = models.CharField(_('name [tr]'), max_length=48)
     name_en = models.CharField(_('name [en]'), max_length=48)
 
-    children = models.ManyToManyField(
+    parent = models.ForeignKey(
             'Category',
             null=True,
             blank=True,
             verbose_name=_('subcategory')
     )
+
+    #children = models.ManyToManyField(
+    #        'Category',
+    #        blank=True,
+    #        verbose_name=_('subcategory')
+    #)
 
     stores = models.ManyToManyField(
             'Store',

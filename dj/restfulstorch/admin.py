@@ -6,7 +6,7 @@ class CategoryAdmin(admin.ModelAdmin):
     pass
 
 class StoreAdmin(admin.ModelAdmin):
-    pass
+    fields = (('store_code', 'store_name'), 'latitude')
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Store, StoreAdmin)
