@@ -34,7 +34,6 @@ INSTALLED_APPS = [
     #'polls.apps.PollsConfig',
     'restfulstorch.apps.RestfulstorchConfig',
     'rest_framework',
-    'phonenumber_field',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
