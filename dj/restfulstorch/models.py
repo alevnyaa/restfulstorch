@@ -25,8 +25,8 @@ class Category(models.Model):
     def __str__(self):
         return '/'.join([self.parent.__str__(), self.name_en]) if self.parent is not None else self.name_en
 
-    def tr_str(self):
-        return '/'.join([self.parent.tr_str(), self.name_tr]) if self.parent is not None else self.name_tr
+    def str_tr(self):
+        return '/'.join([self.parent.str_tr(), self.name_tr]) if self.parent is not None else self.name_tr
 
 class Store(models.Model):
     store_code = models.BigIntegerField(
