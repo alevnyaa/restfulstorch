@@ -16,6 +16,12 @@ class CategorySerializer(serializers.ModelSerializer):
         else:
             return None
 
+    def get_name_en(self, obj):
+        self.__str__()
+
+    def get_name_tr(self, obj):
+        self.tr_str()
+
     class Meta:
         model = Category
         fields = ('name_tr', 'name_en', 'id', 'parent', 'stores')

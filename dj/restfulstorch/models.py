@@ -9,15 +9,9 @@ class Category(models.Model):
             'Category',
             null=True,
             blank=True,
-            verbose_name=_('subcategory')
+            verbose_name=_('parent')
     )
-
-    #children = models.ManyToManyField(
-    #        'Category',
-    #        blank=True,
-    #        verbose_name=_('subcategory')
-    #)
-
+    
     stores = models.ManyToManyField(
             'Store',
             blank=True,
@@ -29,7 +23,10 @@ class Category(models.Model):
         verbose_name_plural = _('categories')
 
     def __str__(self):
-        return self.name_tr + '/' + self.name_en
+        return '/'.join([self.parent.__str__(), self.name_en]) if self.parent is not None else self.name_en
+
+    def tr_str(self):
+        return '/'.join([self.parent.tr_str(), self.name_tr]) if self.parent is not None else self.name_tr
 
 class Store(models.Model):
     store_code = models.BigIntegerField(
