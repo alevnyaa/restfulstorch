@@ -1,4 +1,4 @@
-from .models import Category, Store, StoreDetails, BusinessHours
+from .models import Category, Store
 from rest_framework import serializers
 
 class StoreSerializer(serializers.HyperlinkedModelSerializer):
@@ -27,14 +27,3 @@ class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = ('id', 'str_en', 'str_tr', 'name_en', 'name_tr', 'parent', 'stores')
-
-class StoreDetailsSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = StoreDetails
-        fields = '__all__'
-
-class BusinessHoursSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = BusinessHours
-        fields = '__all__'
-

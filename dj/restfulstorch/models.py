@@ -56,26 +56,6 @@ class Store(models.Model):
             auto_now_add=True
     )
 
-    details = models.OneToOneField(
-              'StoreDetails',
-              on_delete=models.CASCADE,
-              related_name='details_of',
-              verbose_name=_('details of')
-    )
-
-    def __str__(self):
-        return self.store_name
-
-    class Meta:
-        verbose_name = _('store')
-        verbose_name_plural = _("stores")
-
-class StoreDetails(models.Model):
-    business_hours = models.ForeignKey(
-        'BusinessHours',
-        verbose_name=_('business hours')
-    )
-
     address = models.TextField(_('address'))
 
     primary_phone_number = models.CharField(_('primary phone number'), max_length=11, blank=True, null=True)
@@ -89,35 +69,24 @@ class StoreDetails(models.Model):
     contact_phone_number = models.CharField(_('contact phone number'), max_length=11)
     contact_email_address = models.EmailField(_('contact email address'), blank=True, null=True)
 
-    class Meta:
-        verbose_name = _('store details')
-        verbose_name_plural = _('store details')
+    hours_monday_open = models.TimeField(_('monday opening'), blank=True, null=True)
+    hours_monday_close = models.TimeField(_('monday closing'), blank=True, null=True)
+    hours_tuesday_open = models.TimeField(_('tuesday opening'), blank=True, null=True)
+    hours_tuesday_close = models.TimeField(_('tuesday closing'), blank=True, null=True)
+    hours_wednesday_open = models.TimeField(_('wednesday opening'), blank=True, null=True)
+    hours_wednesday_close = models.TimeField(_('wednesday closing'), blank=True, null=True)
+    hours_thursday_open = models.TimeField(_('thursday opening'), blank=True, null=True)
+    hours_thursday_close = models.TimeField(_('thursday closing'), blank=True, null=True)
+    hours_friday_open = models.TimeField(_('friday opening'), blank=True, null=True)
+    hours_friday_close = models.TimeField(_('friday closing'), blank=True, null=True)
+    hours_saturday_open = models.TimeField(_('saturday opening'), blank=True, null=True)
+    hours_saturday_close = models.TimeField(_('saturday closing'), blank=True, null=True)
+    hours_sunday_open = models.TimeField(_('sunday opening'), blank=True, null=True)
+    hours_sunday_close = models.TimeField(_('sunday closing'), blank=True, null=True)
 
-
-WEEKDAYS = [
-  (1, _('Monday')),
-  (2, _('Tuesday')),
-  (3, _('Wednesday')),
-  (4, _('Thursday')),
-  (5, _('Friday')),
-  (6, _('Saturday')),
-  (7, _('Sunday')),
-]
-
-class BusinessHours(models.Model):
-    weekday = models.IntegerField(
-        _('weekday'),
-        choices=WEEKDAYS
-    )
-    opening_time = models.TimeField(_('opening time'))
-    closing_time = models.TimeField(_('closing time'))
-
-    #TO DO: Should be a better way to do this
     def __str__(self):
-        for day in WEEKDAYS:
-            if (day[0] == self.weekday):
-                return str(day[1])
+        return self.store_name
 
     class Meta:
-        verbose_name = _("business hours")
-        verbose_name_plural = _("business hours")
+        verbose_name = _('store')
+        verbose_name_plural = _("stores")
