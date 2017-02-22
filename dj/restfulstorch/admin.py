@@ -6,7 +6,7 @@ class CategoryAdmin(admin.ModelAdmin):
     fields = (('name_tr', 'name_en'), 'parent', 'stores')
 
 class StoreAdmin(admin.ModelAdmin):
-    fields = ('store_code', 'store_name', ('latitude', 'longitude'))
+    fields = ('store_code', 'store_name', ('latitude', 'longitude'), 'details')
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Store, StoreAdmin)

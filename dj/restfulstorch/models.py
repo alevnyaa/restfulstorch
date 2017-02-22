@@ -11,7 +11,7 @@ class Category(models.Model):
             blank=True,
             verbose_name=_('parent')
     )
-    
+
     stores = models.ManyToManyField(
             'Store',
             blank=True,
@@ -56,6 +56,13 @@ class Store(models.Model):
             auto_now_add=True
     )
 
+    details = models.OneToOneField(
+              'StoreDetails',
+              on_delete=models.CASCADE,
+              related_name='details_of',
+              verbose_name=_('details of')
+    )
+
     def __str__(self):
         return self.store_name
 
@@ -73,11 +80,11 @@ class StoreDetails(models.Model):
 
     primary_phone_number = models.CharField(_('primary phone number'), max_length=11, blank=True, null=True)
     secondary_phone_number = models.CharField(_('secondary phone number'), max_length=11, blank=True, null=True)
-    
+
     email_address = models.EmailField(_('email address'), blank=True, null=True)
-    
+
     website_address = models.CharField(_('website address'), max_length=128, blank=True, null=True)
-    
+
     contact_name = models.CharField(_('contact name'), max_length=30)
     contact_phone_number = models.CharField(_('contact phone number'), max_length=11)
     contact_email_address = models.EmailField(_('contact email address'), blank=True, null=True)
@@ -100,12 +107,17 @@ WEEKDAYS = [
 class BusinessHours(models.Model):
     weekday = models.IntegerField(
         _('weekday'),
-        choices=WEEKDAYS,
-        unique=True
+        choices=WEEKDAYS
     )
     opening_time = models.TimeField(_('opening time'))
     closing_time = models.TimeField(_('closing time'))
-    
+
+    #TO DO: Should be a better way to do this
+    def __str__(self):
+        for day in WEEKDAYS:
+            if (day[0] == self.weekday):
+                return str(day[1])
+
     class Meta:
         verbose_name = _("business hours")
         verbose_name_plural = _("business hours")
