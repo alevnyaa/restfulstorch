@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-06 16:47+0300\n"
+"POT-Creation-Date: 2017-02-23 00:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,10 +27,10 @@ msgid "name [en]"
 msgstr "isim [ing]"
 
 #: restfulstorch/models.py:12
-msgid "parent category"
-msgstr "ana kategorisi"
+msgid "parent"
+msgstr ""
 
-#: restfulstorch/models.py:18 restfulstorch/models.py:60
+#: restfulstorch/models.py:18 restfulstorch/models.py:91
 msgid "store"
 msgstr "mağaza"
 
@@ -42,111 +42,158 @@ msgstr "kategori"
 msgid "categories"
 msgstr "kategoriler"
 
-#: restfulstorch/models.py:30
+#: restfulstorch/models.py:33
 msgid "store code"
 msgstr "mağaza kodu"
 
-#: restfulstorch/models.py:35
+#: restfulstorch/models.py:38
 msgid "store name"
 msgstr "mağaza ismi"
 
-#: restfulstorch/models.py:40
+#: restfulstorch/models.py:43
 msgid "latitude"
 msgstr "enlem"
 
-#: restfulstorch/models.py:46
+#: restfulstorch/models.py:49
 msgid "longitude"
 msgstr "boylam"
 
-#: restfulstorch/models.py:52
+#: restfulstorch/models.py:55
 msgid "creation time"
 msgstr "yaratılma tarihi"
 
+#: restfulstorch/models.py:59
+msgid "address"
+msgstr "adres"
+
 #: restfulstorch/models.py:61
+msgid "primary phone number"
+msgstr "birincil telefon numarası"
+
+#: restfulstorch/models.py:62
+msgid "secondary phone number"
+msgstr "ikincil telefon numarası"
+
+#: restfulstorch/models.py:64
+msgid "email address"
+msgstr "email adresi"
+
+#: restfulstorch/models.py:66
+msgid "website address"
+msgstr "website adresi"
+
+#: restfulstorch/models.py:68
+msgid "contact name"
+msgstr "iletişim ismi"
+
+#: restfulstorch/models.py:69
+msgid "contact phone number"
+msgstr "iletişim telefon numarası"
+
+#: restfulstorch/models.py:70
+msgid "contact email address"
+msgstr "iletişim email adresi"
+
+#: restfulstorch/models.py:72
+msgid "monday opening"
+msgstr ""
+
+#: restfulstorch/models.py:73
+msgid "monday closing"
+msgstr ""
+
+#: restfulstorch/models.py:74
+msgid "tuesday opening"
+msgstr ""
+
+#: restfulstorch/models.py:75
+msgid "tuesday closing"
+msgstr ""
+
+#: restfulstorch/models.py:76
+#, fuzzy
+#| msgid "Wednesday"
+msgid "wednesday opening"
+msgstr "Çarşamba"
+
+#: restfulstorch/models.py:77
+#, fuzzy
+#| msgid "Wednesday"
+msgid "wednesday closing"
+msgstr "Çarşamba"
+
+#: restfulstorch/models.py:78
+msgid "thursday opening"
+msgstr ""
+
+#: restfulstorch/models.py:79
+msgid "thursday closing"
+msgstr ""
+
+#: restfulstorch/models.py:80
+msgid "friday opening"
+msgstr ""
+
+#: restfulstorch/models.py:81
+msgid "friday closing"
+msgstr ""
+
+#: restfulstorch/models.py:82
+msgid "saturday opening"
+msgstr ""
+
+#: restfulstorch/models.py:83
+msgid "saturday closing"
+msgstr ""
+
+#: restfulstorch/models.py:84
+msgid "sunday opening"
+msgstr ""
+
+#: restfulstorch/models.py:85
+msgid "sunday closing"
+msgstr ""
+
+#: restfulstorch/models.py:92
 #, fuzzy
 #| msgid "store"
 msgid "stores"
 msgstr "mağaza"
 
-#: restfulstorch/models.py:66 restfulstorch/models.py:107
-#: restfulstorch/models.py:108
-msgid "business hours"
-msgstr "çalışma saatleri"
+#~ msgid "parent category"
+#~ msgstr "ana kategorisi"
 
-#: restfulstorch/models.py:69
-msgid "address"
-msgstr "adres"
+#~ msgid "business hours"
+#~ msgstr "çalışma saatleri"
 
-#: restfulstorch/models.py:71
-msgid "primary phone number"
-msgstr "birincil telefon numarası"
-
-#: restfulstorch/models.py:72
-msgid "secondary phone number"
-msgstr "ikincil telefon numarası"
-
-#: restfulstorch/models.py:74
-msgid "email address"
-msgstr "email adresi"
-
-#: restfulstorch/models.py:76
-msgid "website address"
-msgstr "website adresi"
-
-#: restfulstorch/models.py:78
-msgid "contact name"
-msgstr "iletişim ismi"
-
-#: restfulstorch/models.py:79
-msgid "contact phone number"
-msgstr "iletişim telefon numarası"
-
-#: restfulstorch/models.py:80
-msgid "contact email address"
-msgstr "iletişim email adresi"
-
-#: restfulstorch/models.py:83 restfulstorch/models.py:84
 #, fuzzy
-#| msgid "store code"
-msgid "store details"
-msgstr "mağaza kodu"
+#~| msgid "store code"
+#~ msgid "store details"
+#~ msgstr "mağaza kodu"
 
-#: restfulstorch/models.py:88
-msgid "Monday"
-msgstr "Pazartesi"
+#~ msgid "Monday"
+#~ msgstr "Pazartesi"
 
-#: restfulstorch/models.py:89
-msgid "Tuesday"
-msgstr "Salı"
+#~ msgid "Tuesday"
+#~ msgstr "Salı"
 
-#: restfulstorch/models.py:90
-msgid "Wednesday"
-msgstr "Çarşamba"
+#~ msgid "Thursday"
+#~ msgstr "Perşembe"
 
-#: restfulstorch/models.py:91
-msgid "Thursday"
-msgstr "Perşembe"
+#~ msgid "Friday"
+#~ msgstr "Cuma"
 
-#: restfulstorch/models.py:92
-msgid "Friday"
-msgstr "Cuma"
+#~ msgid "Saturday"
+#~ msgstr "Cumartesi"
 
-#: restfulstorch/models.py:93
-msgid "Saturday"
-msgstr "Cumartesi"
+#~ msgid "Sunday"
+#~ msgstr "Pazar"
 
-#: restfulstorch/models.py:94
-msgid "Sunday"
-msgstr "Pazar"
+#~ msgid "weekday"
+#~ msgstr "gün"
 
-#: restfulstorch/models.py:99
-msgid "weekday"
-msgstr "gün"
+#~ msgid "opening time"
+#~ msgstr "açılış saati"
 
-#: restfulstorch/models.py:103
-msgid "opening time"
-msgstr "açılış saati"
-
-#: restfulstorch/models.py:104
-msgid "closing time"
-msgstr "kapanış saati"
+#~ msgid "closing time"
+#~ msgstr "kapanış saati"
