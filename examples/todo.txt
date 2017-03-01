@@ -16,3 +16,5 @@ Create methods with auth and validators
 #Urls
 Look at exampleurls.txt
 
+#Translation
+Manually change locale (and all strings lang) on every request
