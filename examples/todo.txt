@@ -1,0 +1,18 @@
+#Admin
+COLUMN BASED category editor
+better store page
+
+#Auth
+User and groups, user creation, model edit auth check
+OAuth2 token
+
+#Model
+Permissions
+Log model
+
+#Viewsets
+Create methods with auth and validators
+
+#Urls
+Look at exampleurls.txt
+
