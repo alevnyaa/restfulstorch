@@ -69,6 +69,9 @@ class Store(models.Model):
     contact_phone_number = models.CharField(_('contact phone number'), max_length=11)
     contact_email_address = models.EmailField(_('contact email address'), blank=True, null=True)
 
+    # If close > open, then the same day
+    # else if close = open, open for 24 hours till next day
+    # else if close < open, then opens today but closes the next
     hours_monday_open = models.TimeField(_('monday opening'), blank=True, null=True)
     hours_monday_close = models.TimeField(_('monday closing'), blank=True, null=True)
     hours_tuesday_open = models.TimeField(_('tuesday opening'), blank=True, null=True)
