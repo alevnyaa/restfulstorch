@@ -3,10 +3,11 @@ from django.contrib import admin
 from .models import Category, Store
 
 class CategoryAdmin(admin.ModelAdmin):
-    fields = (('name_tr', 'name_en'), 'parent', 'stores')
+    fields = ('is_active', ('name_tr', 'name_en'), 'parent', 'stores')
 
 class StoreAdmin(admin.ModelAdmin):
     fields = (
+            'is_active',
             'store_code',
             'store_name',
             ('latitude', 'longitude'),

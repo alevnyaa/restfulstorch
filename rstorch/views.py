@@ -63,7 +63,7 @@ class StoreList(APIView):
     List all stores, or create a new store.
     """
     def get(self, request, format=None):
-        stores = Stores.objects.all()
+        stores = Store.objects.all()
         serializer = StoreSerializer(stores, many=True)
         return Response(serializer.data)
 
@@ -128,6 +128,6 @@ class StoreSearch(APIView):
     """
     def get(self, request, latitude, longitude, query, token, distance, format=None):
         #search based on information here
-        stores = Stores.objects.all()
+        stores = Store.objects.all()
         serializer = StoreSerializer(stores, many=True)
         return Response(serializer.data)

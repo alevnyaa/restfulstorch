@@ -3,11 +3,11 @@ from rest_framework import serializers
 from django.contrib.auth.models import User
 
 class UserSerializer(serializers.ModelSerializer):
-    class meta:
+    class Meta:
         model = User
         fields = '__all__'
 
-class StoreSerializer(serializers.HyperlinkedModelSerializer):
+class StoreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Store
         fields = '__all__'
