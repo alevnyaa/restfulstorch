@@ -5,9 +5,9 @@ from . import views
 app_name = 'rstorch'
 
 urlpatterns = [
-    url(r'^users/', views.UserList.as_view()),
+    url(r'^users/$', views.UserList.as_view()),
     url(r'^users/(?P<pk>[0-9]+)/$', views.UserDetail.as_view()),
-    url(r'^categories/', views.CategoryList.as_view()),
+    url(r'^categories/$', views.CategoryList.as_view()),
     url(r'^categories/(?P<pk>[0-9]+)/$', views.CategoryDetail.as_view()),
     url(r'^store/$', views.StoreList.as_view()),
     url(r'^stores/(?P<pk>[0-9]+)/$', views.StoreDetail.as_view()),
