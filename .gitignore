@@ -3,3 +3,6 @@ venv/
 db.sqlite3
 *.swp
 __pycache__/
+config/static/
+static/
+config/settings/secret.py
