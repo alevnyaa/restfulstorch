@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.6"
+  - "nightly"
+install: "pip install -r requirements/test.txt"
+#script: pytest
+env:
+  - DJANGO_VERSION=1.10.6
+git:
+  depth: 3
