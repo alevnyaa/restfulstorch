@@ -91,8 +91,8 @@ class CategoryDetail(APIView):
 
     def get(self, request, pk, format=None):
         category = self.get_object(pk)
-        category = CategorySerializer(store)
-        return Response(store.data)
+        category = CategorySerializer(category)
+        return Response(category.data)
 
     def put(self, request, pk, format=None):
         category = self.get_object(pk)
@@ -103,8 +103,8 @@ class CategoryDetail(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk, format=None):
-        store = self.get_object(pk)
-        store.delete()
+        category = self.get_object(pk)
+        category.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 class StoreList(APIView):
