@@ -5,12 +5,14 @@ from django.contrib.auth.models import User
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        #fields = '__all__'
+        exclude = ('is_active',)
 
 class StoreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Store
-        fields = '__all__'
+        #fields = '__all__'
+        exclude = ('is_active',)
 
 class CategorySerializer(serializers.ModelSerializer):
     #str_en = serializers.SerializerMethodField()
@@ -33,4 +35,5 @@ class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         #fields = ('id', 'str_en', 'str_tr', 'name_en', 'name_tr', 'parent', 'stores')
-        fields = '__all__'
+        #fields = '__all__'
+        exclude = ('is_active',)
