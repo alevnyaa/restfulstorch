@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 class Category(models.Model):
-    is_active = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
 
     name_tr = models.CharField(_('name [tr]'), max_length=48)
     name_en = models.CharField(_('name [en]'), max_length=48)
@@ -31,7 +31,7 @@ class Category(models.Model):
         return '/'.join([self.parent.str_tr(), self.name_tr]) if self.parent is not None else self.name_tr
 
 class Store(models.Model):
-    is_active = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
 
     store_code = models.BigIntegerField(
             _('store code'),
