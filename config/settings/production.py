@@ -6,6 +6,8 @@ DEBUG = True
 SECRET_KEY = 'fpsuhf8ahfa398pfhawafp389fh3a8hfuofhp9v'
 
 ALLOWED_HOSTS = [
+	'govelapp.com',
+	'www.govelapp.com',
         '127.0.0.1',
         'localhost',
         '95.85.27.32',
